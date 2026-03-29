@@ -1,0 +1,103 @@
+[
+  {
+    "origen":"Alma Rosa","destino":"Los Tres Ojos",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":12,"costo":50},
+      {"tipo":"concho","tiempo_min":8,"costo":120},
+      {"tipo":"motoconcho","tiempo_min":6,"costo":100}
+    ]
+  },
+  {
+    "origen":"Alma Rosa","destino":"Los Prados",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":20,"costo":50},
+      {"tipo":"concho","tiempo_min":14,"costo":150},
+      {"tipo":"carro_publico","tiempo_min":18,"costo":75}
+    ],
+    "transbordo":{"detalle":"Transbordo en San Vicente de Paúl","costo_extra":{"guagua":50,"carro_publico":50}}
+  },
+  {
+    "origen":"Alma Rosa","destino":"Evaristo Morales",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":18,"costo":50},
+      {"tipo":"concho","tiempo_min":12,"costo":130},
+      {"tipo":"motoconcho","tiempo_min":10,"costo":110}
+    ]
+  },
+  {
+    "origen":"Los Tres Ojos","destino":"Alma Rosa",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":12,"costo":50},
+      {"tipo":"concho","tiempo_min":8,"costo":120},
+      {"tipo":"motoconcho","tiempo_min":6,"costo":100}
+    ]
+  },
+  {
+    "origen":"Los Tres Ojos","destino":"Los Prados",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":28,"costo":100},
+      {"tipo":"concho","tiempo_min":18,"costo":180},
+      {"tipo":"carro_publico","tiempo_min":22,"costo":125}
+    ],
+    "transbordo":{"detalle":"Transbordo en 27 de Febrero","costo_extra":{"guagua":50,"carro_publico":50}}
+  },
+  {
+    "origen":"Los Tres Ojos","destino":"Evaristo Morales",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":25,"costo":75},
+      {"tipo":"concho","tiempo_min":16,"costo":170},
+      {"tipo":"motoconcho","tiempo_min":14,"costo":150}
+    ]
+  },
+  {
+    "origen":"Los Prados","destino":"Los Tres Ojos",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":25,"costo":50},
+      {"tipo":"concho","tiempo_min":15,"costo":170},
+      {"tipo":"carro_publico","tiempo_min":20,"costo":100}
+    ],
+    "transbordo":{"detalle":"Transbordo en Winston Churchill","costo_extra":{"guagua":50,"carro_publico":50}}
+  },
+  {
+    "origen":"Los Prados","destino":"Evaristo Morales",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":10,"costo":50},
+      {"tipo":"concho","tiempo_min":7,"costo":100},
+      {"tipo":"motoconcho","tiempo_min":5,"costo":80}
+    ]
+  },
+  {
+    "origen":"Evaristo Morales","destino":"Alma Rosa",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":18,"costo":50},
+      {"tipo":"concho","tiempo_min":12,"costo":130},
+      {"tipo":"motoconcho","tiempo_min":10,"costo":110}
+    ]
+  },
+  {
+    "origen":"Evaristo Morales","destino":"Sabana Perdida",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":40,"costo":100},
+      {"tipo":"concho","tiempo_min":30,"costo":250},
+      {"tipo":"carro_publico","tiempo_min":35,"costo":150}
+    ],
+    "transbordo":{"detalle":"Transbordo en Kennedy","costo_extra":{"guagua":50,"carro_publico":75}}
+  },
+  {
+    "origen":"Sabana Perdida","destino":"Los Tres Ojos",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":50,"costo":100},
+      {"tipo":"concho","tiempo_min":35,"costo":300},
+      {"tipo":"carro_publico","tiempo_min":45,"costo":175}
+    ],
+    "transbordo":{"detalle":"Transbordo en Cristo Rey","costo_extra":{"guagua":50,"carro_publico":75}}
+  },
+  {
+    "origen":"Sabana Perdida","destino":"Haina",
+    "tipos":[
+      {"tipo":"guagua","tiempo_min":60,"costo":150},
+      {"tipo":"carro_publico","tiempo_min":55,"costo":200}
+    ],
+    "transbordo":{"detalle":"Transbordo en Duarte","costo_extra":{"guagua":100,"carro_publico":100}}
+  }
+]

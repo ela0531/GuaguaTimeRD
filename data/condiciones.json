@@ -1,0 +1,22 @@
+[
+  {
+    "nombre":"lluvia",
+    "etiqueta":"🌧️ Lluvia",           
+    "tiempo_pct":30,
+    "costo_extra":{ "guagua":0, "concho":50, "carro_publico":25, "motoconcho":75}
+  },
+
+  {
+    "nombre":"tapon", 
+    "etiqueta":"🚗 Hora Pico",         
+    "tiempo_pct":50,
+    "costo_extra":{ "guagua":0, "concho":25, "carro_publico":0, "motoconcho":25}
+   },
+
+   {
+    "nombre":"paro",  
+    "etiqueta":"🚫 Paro de Transporte",
+    "tiempo_pct":80,
+    "costo_extra":{ "guagua":0, "concho":100, "carro_publico":50, "motoconcho":100}
+   }
+]

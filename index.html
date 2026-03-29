@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas RD — GuaguaTime</title>
+  <meta name="description" content="Simulador de rutas del transporte público dominicano">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+        <div class="header__inner">
+            <div class="header__marca">
+                <span class="header__titulo">🚌 GuaguaTime RD</span>
+                <span class="header__sub">Simulador de transporte público dominicano</span>
+            </div>
+            
+            <div class="header__botones">
+                <button class="btn-sm" id="btn-tema">🌙 Oscuro</button>
+                <button class="btn-sm" id="btn-ahorro">⚡ Ahorro</button>
+                <button class="btn-sm" id="btn-idioma">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav" aria-label="Navegación principal">
+        <a href="#busqueda"  class="nav__link nav__link--on">Rutas</a>
+        <a href="#mapa"      class="nav__link">Mapa</a>
+        <a href="#favoritas" class="nav__link">Favoritas</a>
+    </nav>
+
+    <main class="main">
+        <aside>
+            <section class="card" id="busqueda" aria-labelledby="tit-busqueda">
+                <h2 class="card__h" id="tit-busqueda">Planifica tu viaje</h2>
+                <form id="formulario-ruta" class="form" novalidate>
+
+                    <div class="form__grupo">
+                        <label class="form__label" for="origen">Sector Origen</label>
+                        <select class="form__select" id="origen" required aria-required="true">
+                            <option value="">Selecciona origen...</option>
+                        </select>
+                    </div>
+
+                    <div class="form__grupo">
+                        <label class="form__label" for="destino">Sector Destino</label>
+                        <select class="form__select" id="destino" required aria-required="true">
+                            <option value="">Selecciona destino...</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Condiciones activas</legend>
+                        <div class="form__checks">
+                            <label class="form__check"><input type="checkbox" name="condicion" value="lluvia"> 🌧️ Lluvia</label>
+                            <label class="form__check"><input type="checkbox" name="condicion" value="tapon">  🚗 Hora Pico</label>
+                            <label class="form__check"><input type="checkbox" name="condicion" value="paro">   🚫 Paro de Transporte</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form__grupo">
+                        <label class="form__label" for="ordenar">Ordenar por</label>
+                        <select class="form__select" id="ordenar">
+                            <option value="tiempo">Menor tiempo</option>
+                            <option value="costoTotal">Menor costo</option>
+                            <option value="transbordos">Menos transbordos</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-calcular">Calcular Rutas</button>
+                </form>
+            </section>
+
+            <div id="alertas" class="alertas" aria-live="polite"></div>
+
+            <section class="card" id="mapa" aria-labelledby="tit-mapa">
+                <h2 class="card__h" id="tit-mapa">Mapa de red</h2>
+                <div class="mapa-wrap"><div id="mapa-svg"></div></div>
+            </section>
+
+            <section class="card" id="reglas" aria-labelledby="tit-reglas">
+                <h2 class="card__h" id="tit-reglas">Reglas de cálculo</h2>
+                <div class="reglas-caja">
+                    <strong>Tiempo:</strong> tiempo_min × (1 + pct/100) por cada condición activa, redondeado al minuto.<br>
+                    <strong>Costo:</strong> costo_base + costo_transbordo + costo_extra de condiciones activas.
+                </div>
+            </section>
+        </aside>
+
+        <div>
+            <section class="card" aria-labelledby="tit-res">
+                <h2 class="card__h" id="tit-res">Rutas disponibles</h2>
+                <div id="resultados" class="lista" aria-live="polite">
+                    <p class="placeholder">Selecciona origen y destino para ver rutas.</p>
+                </div>
+            </section>
+
+            <section class="card" id="favoritas" aria-labelledby="tit-fav">
+                <h2 class="card__h" id="tit-fav">Favoritas</h2>
+                <div id="fav-lista" class="fav-lista">
+                    <p class="placeholder">No tienes rutas guardadas.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 GuaguaTime RD.</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "es":
+  {
+    "sin_rutas":"No hay rutas para ese trayecto.",
+    "sin_fav":"No tienes rutas guardadas.",
+    "directo":"Directo",
+    "transbordo":"Con transbordo",
+    "min":"min","guagua":"Guagua",
+    "concho":"Concho",
+    "carro_publico":"Carro Público",
+    "motoconcho":"Motoconcho",
+    "alerta_igual":"El origen y destino no pueden ser iguales.",
+    "btn_idioma":"EN"
+  },
+
+  "en":
+  {
+    "sin_rutas":"No routes found for this trip.",
+    "sin_fav":"No saved routes yet.",
+    "directo":"Direct",
+    "transbordo":"Transfer",
+    "min":"min",
+    "guagua":"Bus",
+    "concho":"Shared Taxi",
+    "carro_publico":"Public Car",
+    "motoconcho":"Motorbike",
+    "alerta_igual":"Origin and destination cannot be the same.",
+    "btn_idioma":"ES"
+  }
+
+  
+}
