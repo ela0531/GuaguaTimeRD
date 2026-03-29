@@ -223,4 +223,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     renderFavoritos();
   });
 
+   window.guardarFav = guardarFav;
+   window.eliminarFav = eliminarFav;
+
 });
